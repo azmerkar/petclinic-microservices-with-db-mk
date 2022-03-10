@@ -1872,7 +1872,7 @@ ansible-playbook -vvv --connection=local --inventory 127.0.0.1, --extra-vars "wo
 
 ```groovy
 pipeline {
-    agent { label "master" }
+    agent any
     environment {
         PATH=sh(script:"echo $PATH:/usr/local/bin", returnStdout:true).trim()
         APP_NAME="petclinic"
