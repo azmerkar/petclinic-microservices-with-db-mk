@@ -146,4 +146,3 @@ services:
 networks:
   clarusnet:
     driver: overlay
-```
